@@ -1,0 +1,10 @@
+/* // import styled from 'styled-components';
+// export const Container = styled.section``; */
+
+.container {
+    position: absolute;
+    background: #A6955A;
+    width: 1920px;
+    height: 29px;
+}
+    

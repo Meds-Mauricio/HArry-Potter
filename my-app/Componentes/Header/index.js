@@ -1,15 +1,13 @@
 import React from 'react'
-import{ Container } from './styles';
+import style from "./styles.module.css"
 
-export default function Header({ children }) {
+export default function Header() {
     return (
-        <Container>
-            {children}
-            {/* <section className={style.containerHeader}>
-                <div className={style.header}>
-                </div>
-            </section> */}
-        </Container>
+        <>
+            <div className={style.container}>
+            </div>
+        </>
+
 
     )
 }

@@ -1,0 +1,49 @@
+/* .footerImg {
+    max-width:1172px ;
+    width: 100%;
+    height: 619px;
+
+    display: flex;
+} */
+
+.imgGrifinoria {
+    background-image: url("/public/grifinoria.png");
+    /* position: absolute; */
+    width: 272px;
+    height: 288px;
+    margin-left: 299px;
+    margin-top: 648px;
+    border-radius: 0px;
+}
+
+.imgSonserina {
+    background-image: url("/public/sonserina.png");
+    position: absolute;
+    width: 272px;
+    height: 288px;
+    margin-left: 592px;
+    margin-top: 648px;  
+      border-radius: 0px;
+
+}
+
+.imgLufaLufa {
+    background-image: url("/public/lufa-lufa.png");
+    position: absolute;
+    width: 272px;
+    height: 288px;
+    margin-left: 886px;
+    margin-top: 649px;
+    border-radius: 0px;
+
+}
+
+.imgCorvinal {
+    background-image: url("/public/corvinal.png");
+    position: absolute;
+    width: 272px;
+    height: 288px;
+    margin-left: 1179px;
+    margin-top: 649px;
+    border-radius: 0px;
+}
