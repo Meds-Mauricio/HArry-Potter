@@ -1,18 +1,16 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background: #041B29;
+    width: 1345px ;
 }
 
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0
+.body {
+    width: 1345px;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {

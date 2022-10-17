@@ -6,7 +6,7 @@ import style from '../styles/Home.module.css'
 export default function Home() {
 
     return (
-        <section className={style.Container}>
+        <section className={style.ContainerHome}>
 
             <Head>
                 <title>Harry Potter</title>
@@ -14,27 +14,31 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className={style.headerHome}>
-                <Header />
-            </section>
+            {/* <section className={style.headerHome}> */}
+            <Header />
+            {/* </section> */}
             <section className={style.mainHome}>
-                <div className={style.imgLogo}></div>
-                <div className={style.retangulo}>
-                    <p>Veja Todos <br />Os Personagens</p>
+                <div className={style.logos}>
+                    <div className={style.logoHarry}>
+                        <div className={style.imgLogo} />
+                    </div>
+                    <div className={style.button}>
+                        <button onClick={() => (window.location.href = "/personagens")} className={style.retangulo}>
+                            <p>Veja Todos <br />Os Personagens</p>
+                        </button>
+                    </div>
                 </div>
-                <div className={style.imgLogo1}>
+                <div className={style.logoLinha}>
+                    <div className={style.imgLogo1}></div>
                     <p className={style.p1}>Navegue pelas Casas</p>
                     <div className={style.imgLinha}></div>
                 </div>
             </section>
-            <section className={style.footer}>
-            <div  className={style.footerImg}>
+            <section className={style.footerContainer}>
                 <div className={style.imgGrifinoria}></div>
                 <div className={style.imgSonserina}></div>
                 <div className={style.imgLufaLufa}></div>
                 <div className={style.imgCorvinal}></div>
-            </div>
-                {/* <Footer /> */}
             </section>
         </section>
     )

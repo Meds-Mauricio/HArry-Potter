@@ -3,15 +3,16 @@ import style from "./styles.module.css"
 
 export default function Footer() {
     return (
-        <>
-        <div className={style.footerImg}>
+        <section>
+            <div className={style.footer}>
                 <div className={style.imgGrifinoria}></div>
                 <div className={style.imgSonserina}></div>
                 <div className={style.imgLufaLufa}></div>
                 <div className={style.imgCorvinal}></div>
             </div>
-        </>
-            
+        </section>
+
+
 
 
 

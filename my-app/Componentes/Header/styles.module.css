@@ -2,9 +2,9 @@
 // export const Container = styled.section``; */
 
 .container {
-    position: absolute;
+    /* position: absolute; */
     background: #A6955A;
-    width: 1920px;
+    width: 1345px;
     height: 29px;
 }
     
