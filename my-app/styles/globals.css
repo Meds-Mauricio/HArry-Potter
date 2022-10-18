@@ -3,12 +3,13 @@ body {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: #041B29;
-    width: 1345px ;
+    /* background: #041B29; */
+    width: 1345px ; 
 }
 
 .body {
-    width: 1345px;
+    width: 135px;
+    background: #041B29;
 }
 
 

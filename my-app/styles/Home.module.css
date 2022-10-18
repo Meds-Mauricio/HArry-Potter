@@ -1,6 +1,7 @@
 .containerHome {
-    width: 1345px;
-    background: #A6955A;
+    background-size: cover;
+    width: 1350px;
+    /* background: #A6955A; */
     display: flex;
     justify-content: center;
 }
@@ -66,7 +67,7 @@
 }
 
 .imgLogo1 {
-    background-image: url(/_next/static/media/hogwarts_shield_1.24eb8707.png);
+    background-image: url("../public/assets/hogwarts_shield_1.png");
     background-repeat: no-repeat;
     width: 73px;
     height: 84px;
@@ -91,7 +92,7 @@
 }
 
 .imgLinha {
-    background-image: url(/_next/static/media/Linha-home.dcb323f5.png);
+    background-image: url("../public/assets/Linha-home.png");
     background-repeat: no-repeat;
     width: 802px;
     margin-top: 49.5px;
