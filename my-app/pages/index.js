@@ -35,10 +35,10 @@ export default function Home() {
                 </div>
             </section>
             <section className={style.footerContainer}>
-                <div className={style.imgGrifinoria}></div>
-                <div className={style.imgSonserina}></div>
-                <div className={style.imgLufaLufa}></div>
-                <div className={style.imgCorvinal}></div>
+                <div className={style.imgGrifinoria}onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgSonserina}onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgLufaLufa}onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgCorvinal}onClick={() => (window.location.href = "/casa")}></div>
             </section>
         </section>
     )
