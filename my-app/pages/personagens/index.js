@@ -2,37 +2,38 @@ import React from 'react'
 import style from "./styles.module.css"
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Modal from '../../Componentes/Modal';
+
 
 
 export default function Personagens() {
 
 
-   const [data, setData] = useState();
    const [detalhes, setDetalhes] = useState(false);
    const [resposta, setResposta] = useState();
 
-   const persons = (personagem) => {
-      setDetalhes(true);
-      axios
-         .get(
-            `hhttps://hp-api.herokuapp.com/api/characters${personagem}`
-         )
-         .then(function (resposta) {
-            setResposta(resposta.data);
-            console.log(resposta.charactersalternate_names, "abacaxi");
+//    const persons = (personagem) => {
+//     setResposta(true);
+//       axios
+//          .get(
+//             `hhttps://hp-api.herokuapp.com/api/characters${personagem}`
+//          )
+//          .then((resposta)=>{
+//             setDetalhes(resposta.data);
+//             console.log(resposta.data, "abacaxi");
 
-         })
-   }
+//          })
+//    }
 
    useEffect(() => {
       axios
          .get(
-            'https://hp-api.herokuapp.com/api/characters'
+            `https://hp-api.herokuapp.com/api/characters`
 
          )
          .then((response) => {
             setResposta(response.data);
-            console.log(response.data, "abacaxi");
+            console.log(response.data, "pera");
 
          });
 
@@ -58,13 +59,13 @@ export default function Personagens() {
                   resposta.map((characters, index) => {
                      return (
                         <div key={index}>
+                            <Modal />
                            <div className={style.listPersonagens}>
                               <img alt="lista" src={characters.image} />
                               <p className={style.personagemNome}>{characters.name}</p>
                            </div>
                         </div>
                      )
-
 
                   }
                   )

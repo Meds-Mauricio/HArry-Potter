@@ -12,49 +12,44 @@ export default function Footer() {
             </div>
         </section>
 
-
-
-
-
-
     )
 }
 
 
 
 
-export default function MainCharacters(characters) {
+// export default function MainCharacters(characters) {
 
 
 
-    useEffect(() => {
-        axios.get(baseURL).then((response) => {
-            setResposta(response.data);
-        })
-    }, [])
+//     useEffect(() => {
+//         axios.get(baseURL).then((response) => {
+//             setResposta(response.data);
+//         })
+//     }, [])
 
-    return (
-        <main>
-            <ul className={styles.ulCards}>
-                <div className={styles.container}>
-                    {resposta &&
-                        resposta.map((characters, index) => {
-                            return (
-                                <li>
-                                    <div key={index}>
-                                        <div className={styles.divImageCard}><img alt='teste' src={characters.image} width='163px' height='227px'></img></div>
-                                        <div className={styles.divCharactersName}><h3 className={styles.charactersName}>{characters.name}</h3></div>
-                                    </div>
-                                </li>
-                            )
-                        })}
-                </div>
-            </ul>
-        </main>
-    )
-}
+//     return (
+//         <main>
+//             <ul className={styles.ulCards}>
+//                 <div className={styles.container}>
+//                     {resposta &&
+//                         resposta.map((characters, index) => {
+//                             return (
+//                                 <li>
+//                                     <div key={index}>
+//                                         <div className={styles.divImageCard}><img alt='teste' src={characters.image} width='163px' height='227px'></img></div>
+//                                         <div className={styles.divCharactersName}><h3 className={styles.charactersName}>{characters.name}</h3></div>
+//                                     </div>
+//                                 </li>
+//                             )
+//                         })}
+//                 </div>
+//             </ul>
+//         </main>
+//     )
+// }
 
-<section className={style.harryLista}>
+{/* <section className={style.harryLista}>
 {detalhes && resposta && (
    <div className={style.harryModal}>
       <div className={style.harryHabilidades}>
@@ -100,4 +95,4 @@ export default function MainCharacters(characters) {
 
 
 
-</section>
+</section> */}
