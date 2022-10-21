@@ -17,28 +17,29 @@ export default function Personagens() {
         setResposta(true);
           axios
              .get(
-                `hhttps://hp-api.herokuapp.com/api/characters${personagem}`
+                'hhttps://hp-api.herokuapp.com/api/characters/${personagem}',
              )
-             .then((resposta)=>{
-                setDetalhes(resposta.data.results);
-                console.log(resposta.data, "abacaxi");
+             .then((response)=>{
+                setResposta(response?.data.results);
+                console.log(response?.data.results,  "abacaxi");
+                setOpenModal(true);
 
              })
              
        }
 
-    useEffect(() => {
-        axios
-            .get(
-                'https://hp-api.herokuapp.com/api/characters'
-            )
-            .then((response) => {
-                setResposta(response.data);
-                console.log(response.data, "pera");
+    // useEffect(() => {
+    //     axios
+    //         .get(
+    //             'https://hp-api.herokuapp.com/api/characters'
+    //         )
+    //         .then((response) => {
+    //             setResposta(response.data);
+    //             console.log(response.data, "pera");
 
-            });
+    //         });
 
-    }, []);
+    // }, []);
 
     const click = () => {
         window.location.href = "/"
@@ -48,7 +49,7 @@ export default function Personagens() {
         <section className={style.containerPersonagens}>
             <div className={style.headerPersonagens}>
                 <div>
-                    {resposta && (
+                    {openModal && resposta && (
                         <Modal
                             imagem={resposta.image} alt="lista" 
                             nome={resposta.name}
