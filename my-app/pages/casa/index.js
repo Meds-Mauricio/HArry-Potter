@@ -5,8 +5,7 @@ import axios from 'axios'
 
 
 export default function Casa() {
-    export default function Lojas() {
-        const params = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(Window.location.search);
         let urlParams = undefined;
         params.forEach((value, key) => {
             urlParams = Object.assign({}, urlParams, {
@@ -15,24 +14,24 @@ export default function Casa() {
         });
         console.log(urlParams, 'urlParams')
     
-        const renderizarLojas = () => {
+        const Gryffindor = () => {
             if (urlParams.loja === 'riachuello') {
                 return (
-                    <img src='https://logodownload.org/wp-content/uploads/2014/06/riachuelo-logo-1.png' />
+                    <p>oi</p>
                 )
             } else if (urlParams.loja === 'americanas') {
                 return (
-                    <img src='https://kemp.com.br/wp-content/uploads/2020/03/banner-logo-lojas-americanas-2.png' />
+                    <p>oi</p>
                 )
             } else if (urlParams.loja === 'magazine luiza') {
                 return (
-                    <img src='https://www.omninews.com.br/wp-content/uploads/2019/10/magazine-luiza-2.jpghttps://www.omninews.com.br/wp-content/uploads/2019/10/magazine-luiza-2.jpg' />
+                    <p>olá</p>
                 )
             } else {
                 return <h1>Não tem mais lojas</h1>
             }
         }
-        const renderizarCores = () => {
+        const Slytherin = () => {
             if (urlParams.cor === 'Azul') {
                 return (
                     <section className='azul'>
@@ -58,17 +57,17 @@ export default function Casa() {
                 return <h1>não tem mais cores</h1>
             }
         }
-        const renderizarComodos = () => {
+        const Hufflepuff = () => {
             if (urlParams.comodo === 'Cozinha') {
                 return (
                     <>
-                        <img src='https://casatema.vteximg.com.br/arquivos/ids/801663-300-300/image-c20c7b28d54747c58e837c6cf0e912bc.jpg?v=637486606465900000' />
+                    a
                     </>
                 )
             } else if (urlParams.comodo === 'sala') {
                 return (
                     <>
-                        <img src='http://www.moveisplanejadosbauru.com.br/wp-content/uploads/2012/09/banner-salaestar1.jpg' />
+                    b
                     </>
                 )
             } else if (urlParams.comodo === 'quarto') {
@@ -81,7 +80,7 @@ export default function Casa() {
                 return <h1>Não tem mais comodos</h1>
             }
         }
-        const renderizarFornecedores = () => {
+        const Ravenclaw = () => {
             if (urlParams.fornecedor === 'madeira-madeira') {
                 return (
                     <section>
@@ -109,19 +108,19 @@ export default function Casa() {
         }
     
         return (
-            <section className='lojasdiversas'>
-                <div className='lojas'>
+            <section className={style.casas}>
+                <div className={style.grifinoria}>
                     {Gryffindor()}
                 </div>
     
-                <div className='cores'>
+                <div className={style.sensorina}>
                     {Slytherin()}
                 </div>
-                <div className='comdos'>
+                <div className={style.lufaLufa}>
                     {Hufflepuff()}
                 </div>
     
-                <div className='fornecedor'>
+                <div className={style.corvinal}>
                     {Ravenclaw()}
                 </div>
             </section>
