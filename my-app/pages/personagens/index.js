@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Modal from '../../Componentes/Modal';
 
-
-
 export default function Personagens() {
 
 
@@ -13,19 +11,20 @@ export default function Personagens() {
     const [resposta, setResposta] = useState();
     const [openModal, setOpenModal] = useState(false)
 
-       const persons = (personagem) => {
+    const persons = (personagem) => {
         setResposta(true);
-          axios
-             .get(
-                `hhttps://hp-api.herokuapp.com/api/characters${personagem}`
-             )
-             .then((resposta)=>{
-                setDetalhes(resposta.data.results);
-                console.log(resposta.data, "abacaxi");
+        axios
+            .get(
+                `https://hp-api.herokuapp.com/api/characters/${personagem}`,
+            )
+            .then((response) => {
+                setResposta(response?.data.results);
+                console.log(response?.data.results, "abacaxi");
+                setOpenModal(true);
 
-             })
-             
-       }
+            })
+
+    }
 
     useEffect(() => {
         axios
@@ -43,49 +42,50 @@ export default function Personagens() {
     const click = () => {
         window.location.href = "/"
     }
-    
+
     return (
         <section className={style.containerPersonagens}>
             <div className={style.headerPersonagens}>
-                <div>
-                    {resposta && (
+                <section className={style.containerModal}>
+                    {openModal && resposta.ccharacters && (
                         <Modal
-                            imagem={resposta.image} alt="lista" 
-                            nome={resposta.name}
-                            casa={resposta.house}
-                            Espécie={resposta.species}
-                            Data de Nasc={resposta.dateOfBirth}
-                            Gênero={resposta.gender}
-                            Patrous={resposta.patronus}
-                            Varinha={resposta.wand}
-                            Madeira={resposta.wand?.wood}
-                            Núcleo={resposta.wand?.core}
-                            Comprimento={resposta.wand?.length}
-                            Ancestralidade={resposta.ancestry}
+                            imagem={resposta.characters.image} alt="lista"
+                            nome={resposta.characters.name}
+                            casa={resposta.characters.house}
+                            Espécie={resposta.characters.species}
+                            Data de Nasc={resposta.characters.dateOfBirth}
+                            Gênero={resposta.characters.gender}
+                            Patrous={resposta.characters.patronus}
+                            Varinha={resposta.characters.wand}
+                            Madeira={resposta.characters.wand?.wood}
+                            Núcleo={resposta.characters.wand?.core}
+                            Comprimento={resposta.characters.wand?.length}
+                            Ancestralidade={resposta.characters.ancestry}
                             Ator={resposta.actor}
                             setOpenModal={setOpenModal}
                         />
                     )}
-                </div>
+                </section>
                 <div onClick={() =>
                     click()} className={style.imgTopo}></div>
             </div>
             <div className={style.imgFundo}>
-                <div>
-                    <a className={style.linkVoltar} href="/">Voltar</a>
-                </div>
+                <div className={style.containerLogosMain}></div>
+                <div className={style.containerMain}>
                 <div className={style.logoLinha}>
-                    <div className={style.imgLogo1}></div>
-                    <p className={style.p1}>Personagens</p>
-                    <div className={style.imgLinha}></div>
+                        <div className={style.imgLogo1}></div>
+                        <p className={style.p1}>Navegue pelas Casas</p>
+                        <div className={style.imgLinha}></div>
+                    </div>
                 </div>
                 <div className={style.cardContainer}>
+                    
                     {resposta &&
                         resposta.map((characters, index) => {
                             return (
                                 <div key={index}>
-                                    <div className={style.listPersonagens} onClick={() =>setOpenModal()} >
-                    
+                                    <div className={style.listPersonagens} onClick={(e) => setOpenModal()}>
+
                                         <img alt="lista" src={characters.image} />
                                         <p className={style.personagemNome}>{characters.name}</p>
                                     </div>
@@ -98,7 +98,7 @@ export default function Personagens() {
 
                 </div>
                 <div>
-                   
+
                 </div>
             </div>
         </section >

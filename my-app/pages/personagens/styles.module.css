@@ -1,6 +1,5 @@
 .containerPersonagens {
     background-image: url("../../public/assets/background_harry_azul_marinho_1.png");
-    background-repeat: ;
     width: 1345px;
     display: flex;
     flex-direction: row;
@@ -17,6 +16,11 @@
     justify-content: center;
 }
 
+.containerLogos{
+    width: 1280px;
+    height: 53px;
+}
+
 .imgTopo {
     background-image: url("../../public/assets/logo_harry_potter_wizard3_1.png");
     background-repeat: no-repeat;
@@ -25,62 +29,81 @@
 }
 
 .imgFundo {
-    height: 730px;
+    /* height: 730px; */
     width: 1345px;
-    border-radius: 0px;
+    /* border-radius: 0px;
     margin-bottom: 8076px;
-    margin-left: 6px;
+    margin-left: 6px; */
+}
+
+
+.cardContainer {
+    display: flex;
+    width: 1184px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 72px;
+    margin-top: 25px;
+    align-content: center;
+}
+
+.cardContainer img {
+    width: 200px;
+    height: 268px;
+    margin: 0;
+}
+
+.personagemNome {
+    color: #A6955A;
+    width: 205px;
+    text-align: center;
+}
+
+.listPersonagens{
+    background: #000;
+    width: 200px;
+    height: 268px;
+    height: 268px;
+    margin: 41px 0px;
 }
 
 .imgLogo1 {
     background-image: url("../../public/assets/hogwarts_shield_1.png");
     background-repeat: no-repeat;
     width: 73px;
+    height: 84px;  
+
 }
 
 .p1 {
+    width: 270px;
+    margin-top: 37px;
+    margin-left: 10px;
     font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 33px;
-    margin-top: 18px;
+    font-size: 24px;
     color: #A6955A;
 }
 
 .logoLinha {
     display: flex;
-    justify-content: space-between;
-    margin-top: 61px;
-    width: 1206px;
-    flex-wrap: wrap;
-    margin-left: 66px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 44px;
+    width: 1285px;
+    margin-left: 14px;
 }
 
 .imgLinha {
-    background-image: url("../../public/assets/Linha-home.png");
+    background-image: url(/_next/static/media/Linha-home.dcb323f5.png);
     background-repeat: no-repeat;
     width: 802px;
-    margin-top: 36.5px;}
-
-.cardContainer {
-    display: flex;
-    width: 1260px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-top: 25px;
+    margin-top: 49.5px;
+    margin-left: 0px;
 }
 
-.cardContainer img {
-    width: 200px;
-    height: 227px;
-    margin-left: 50px;
-}
-
-.personagemNome {
-    color:#A6955A;
-    width: 205px;
-    margin-left: 47px;
-    text-align: center;
+.containerModal {
+    background-color: red;
+    position: fixed;
 }

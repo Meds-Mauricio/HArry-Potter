@@ -32,35 +32,7 @@
     margin-left: 6px;
 }
 
-.imgLogo1 {
-    background-image: url("../../public/assets/hogwarts_shield_1.png");
-    background-repeat: no-repeat;
-    width: 73px;
-}
 
-.p1 {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 33px;
-    margin-top: 18px;
-    color: #A6955A;
-}
-
-.logoLinha {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 61px;
-    width: 1206px;
-    flex-wrap: wrap;
-    margin-left: 66px;
-}
-
-.imgLinha {
-    background-image: url("../../public/assets/Linha-home.png");
-    background-repeat: no-repeat;
-    width: 802px;
-    margin-top: 36.5px;}
 
 .cardContainer {
     display: flex;

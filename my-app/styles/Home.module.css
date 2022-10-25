@@ -1,9 +1,14 @@
 .containerHome {
     background-size: cover;
     width: 1350px;
-    /* background: #A6955A; */
+    
     display: flex;
     justify-content: center;
+}
+.headerHome {
+    width: 1345px;
+    height: 29px;
+    background: #A6955A;
 }
 
 .mainHome {
@@ -30,8 +35,9 @@
     height: 175px;
     margin-top: 117px;
     margin-left: 94px;
-
 }
+
+
 
 .button {
     margin-top: -446px;
@@ -44,7 +50,6 @@
     height: 59px;
     background: #A6955A;
     border: 1px solid #000;
-    /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
     border-radius: 10px;
     margin-top: 509px;
     margin-left: 108px;

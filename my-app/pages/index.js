@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import Footer from '../Componentes/Footer'
 import Header from '../Componentes/Header'
 import style from '../styles/Home.module.css'
 
@@ -14,9 +13,11 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* <section className={style.headerHome}> */}
-            <Header />
-            {/* </section> */}
+            <section className={style.headerHome}>
+                <Header />
+            </section>
+
+
             <section className={style.mainHome}>
                 <div className={style.logos}>
                     <div className={style.logoHarry}>
@@ -35,10 +36,10 @@ export default function Home() {
                 </div>
             </section>
             <section className={style.footerContainer}>
-                <div className={style.imgGrifinoria}onClick={() => (window.location.href = "/casa")}></div>
-                <div className={style.imgSonserina}onClick={() => (window.location.href = "/casa")}></div>
-                <div className={style.imgLufaLufa}onClick={() => (window.location.href = "/casa")}></div>
-                <div className={style.imgCorvinal}onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgGrifinoria} onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgSonserina} onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgLufaLufa} onClick={() => (window.location.href = "/casa")}></div>
+                <div className={style.imgCorvinal} onClick={() => (window.location.href = "/casa")}></div>
             </section>
         </section>
     )

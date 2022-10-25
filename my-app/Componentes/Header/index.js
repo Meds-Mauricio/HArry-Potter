@@ -1,11 +1,9 @@
 import React from 'react'
-import style from "./styles.module.css"
 
 export default function Header() {
     return (
-        <div className={style.containerHeader}>
-        </div>
-
+        <section className='containerHeader'>
+        </section>
 
     )
 }
