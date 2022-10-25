@@ -10,28 +10,30 @@ export default function Modal({ image, name, house, species, dateOfBirth, gender
     return (
         <section>
             <div>
-               <div>
-                   <Image width={'256px'} height={'356px'} src={props.characters.image}/> 
-                </div>
+
                 {name && (
-                    <div>
-                        <p>resposta:{characters.name}</p>
-                        <p>resposta:{characters.house}</p>
-                        <p>resposta:{characters.species}</p>
-                        <p>resposta:{characters.dateOfBirth}</p>
-                        <p>resposta:{characters.gender}</p>
-                        <p>resposta:{characters.patronus}</p>
-                        <p>resposta:{characters.wand}</p>
-                        <p>resposta:{characters.wand.wood}</p>
-                        <p>resposta:{characters.wand.core}</p>
-                        <p>resposta:{characters.wand.legend}</p>
-                        <p>resposta:{characters.ancestry}</p>
-                        <p>resposta:{characters.actor}</p>
+                    <div className={style.modal}>
+                        <p>resposta:{name}</p>
+                        <p>resposta:{house}</p>
+                        <p>resposta:{species}</p>
+                        <p>resposta:{dateOfBirth}</p>
+                        <p>resposta:{gender}</p>
+                        <p>resposta:{patronus}</p>
+                        <p>resposta:{wand}</p>
+                        <p>resposta:{wand.wood}</p>
+                        <p>resposta:{wand.core}</p>
+                        <p>resposta:{wand.legend}</p>
+                        <p>resposta:{ancestry}</p>
+                        <p>resposta:{actor}</p>
+                        <div>
+                            <Image width={'256px'} height={'356px'} src={props.characters.image} />
+                        </div>
                     </div>
-                    
                 )(
+
+
                     <div>
-                        <button onClick={() => open(false)}>X</button>
+                        <button onClick={() => setOpenModal(openModal)}>X</button>
                     </div>
                 )}
             </div>

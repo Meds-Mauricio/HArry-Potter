@@ -1,24 +1,11 @@
 import React from 'react'
 
-
-export default function LogosMain({ Gryffindor, Slytherin, Hufflepuff, Ravenclaw }) {
+export default function LogosMain() {
     return (
-        <section>
-            <div className='containerL'>
-                <div className='imgLogo1'></div>
-                <p className='p1'>Personagens</p>
-                <div className='imgLinha'></div>
-            </div>
-
-
-            {Gryffindor && (
-                <div>
-                    <p>{Gryffindor}</p>
-                </div>
-
-            )
-
-            }
-        </section >
+        <div className='container'>
+            <div className='imgLogo1'></div>
+            <p className='p1'>Personagens</p>
+            <div className='imgLinha'></div>
+        </div>
     )
 }

@@ -39,12 +39,13 @@
 
 .cardContainer {
     display: flex;
-    width: 1260px;
+    width: 1184px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
-    margin-left: 35px;
+    justify-content: space-around;
+    margin-left: 72px;
     margin-top: 25px;
+    align-content: center;
 }
 
 .cardContainer img {
@@ -63,5 +64,46 @@
     background: #000;
     width: 200px;
     height: 268px;
-    margin: 25px;
+    height: 268px;
+    margin: 41px 0px;
+}
+
+.imgLogo1 {
+    background-image: url("../../public/assets/hogwarts_shield_1.png");
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 84px;  
+
+}
+
+.p1 {
+    width: 270px;
+    margin-top: 37px;
+    margin-left: 10px;
+    font-family: 'Arial';
+    font-size: 24px;
+    color: #A6955A;
+}
+
+.logoLinha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 44px;
+    width: 1285px;
+    margin-left: 14px;
+}
+
+.imgLinha {
+    background-image: url(/_next/static/media/Linha-home.dcb323f5.png);
+    background-repeat: no-repeat;
+    width: 802px;
+    margin-top: 49.5px;
+    margin-left: 0px;
+}
+
+.containerModal {
+    background-color: red;
+    position: fixed;
 }

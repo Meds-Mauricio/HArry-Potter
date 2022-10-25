@@ -3,9 +3,6 @@ import style from "./styles.module.css"
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Modal from '../../Componentes/Modal';
-import LogosMain from '../../Componentes/LogosMain';
-
-
 
 export default function Personagens() {
 
@@ -74,12 +71,15 @@ export default function Personagens() {
             </div>
             <div className={style.imgFundo}>
                 <div className={style.containerLogosMain}></div>
-                <div className={style.containerMain}></div>
+                <div className={style.containerMain}>
+                <div className={style.logoLinha}>
+                        <div className={style.imgLogo1}></div>
+                        <p className={style.p1}>Navegue pelas Casas</p>
+                        <div className={style.imgLinha}></div>
+                    </div>
+                </div>
                 <div className={style.cardContainer}>
-                    <section className={style.containerLogos}>
-                        <LogosMain />
-                    </section>
-
+                    
                     {resposta &&
                         resposta.map((characters, index) => {
                             return (
