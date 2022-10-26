@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import { useState } from 'react';
 import Header from '../Componentes/Header'
+import Modal from '../Componentes/Modal';
 import style from '../styles/Home.module.css'
 
 export default function Home() {
+
 
     return (
         <section className={style.ContainerHome}>
@@ -41,6 +44,7 @@ export default function Home() {
                 <div className={style.imgLufaLufa} onClick={() => (window.location.href = "/casa")}></div>
                 <div className={style.imgCorvinal} onClick={() => (window.location.href = "/casa")}></div>
             </section>
+			
         </section>
     )
 }

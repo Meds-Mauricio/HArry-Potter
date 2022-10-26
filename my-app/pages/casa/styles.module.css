@@ -32,8 +32,6 @@
     margin-left: 6px;
 }
 
-
-
 .cardContainer {
     display: flex;
     width: 1260px;
@@ -55,4 +53,17 @@
     width: 205px;
     margin-left: 47px;
     text-align: center;
+}
+
+.grifinoria{
+    background-color: red;
+}
+.sonserina{
+    background-color: blue;
+}
+.lufaLufa{
+    background-color: yellow;
+}
+.corvinal{
+    background-color: green;
 }

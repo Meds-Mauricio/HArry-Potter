@@ -1,0 +1,43 @@
+.container {
+  width: 1345px;
+  height: 500px;
+  position: fixed;
+}
+
+.modalCompleto {
+    padding: 20px;
+  height: 453px;
+  width: 704px;
+  left: 2913px;
+  top: -26px;
+  border-radius: 10px;
+  background: #171717;
+  margin-top: 50px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fechar {
+  text-align: initial;
+}
+
+.modalNomes {
+  position: absolute;
+  width: 704px;
+  height: 453px;
+  background: #171717;
+  border-radius: 10px;
+  width: 704px;
+  height: 453px;
+  top: -26px;
+  left: 2913px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
