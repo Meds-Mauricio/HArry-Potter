@@ -1,4 +1,5 @@
-.footer {
+.footerContainer {
+    position: relative;
     display: flex;
     width: 1245px;
     height: 288px;
@@ -6,53 +7,56 @@
     margin-bottom: 0;
     border-radius: 0px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-/* .footerImg {
-    display: flex;
-    position: absolute;
-} */
-
 .imgGrifinoria {
-    background-image: url("../public/assets/grifinoria.png");
+    background-image: url("../../public/assets/grifinoria.png");
     width: 272px;
     height: 288px;
-    margin-left: 299px;
-    /* margin-top: -288px; */
+    margin-left: 14px;
+    bottom: 75px;
     border-radius: 0px;
-    background: blue;
-
+    position: absolute;
 }
 
 .imgSonserina {
-    background-image: url("../public/assets/sonserina.png");
+    background-image: url("../../public/assets/sonserina.png");
     width: 272px;
     height: 288px;
-    margin-left: 592px;
-    /* margin-top: -288px;   */
-      border-radius: 0px;
-      background: yellow;
-
+    left: 330px;
+    bottom: 75px;
+    border-radius: 0px;
+    position: absolute;
 }
 
+
 .imgLufaLufa {
-    background-image: url("../public/assets/lufa-lufa.png");
+    background-image: url("../../public/assets/lufa-lufa.png");
     width: 272px;
     height: 288px;
-    margin-left: 886px;
-    /* margin-top: -288px; */
+    margin-left: 640px;
+    bottom: 75px;
     border-radius: 0px;
-    background: orange;
-
+    position: absolute;
 }
 
 .imgCorvinal {
-    background-image: url("../public/assets/corvinal.png");
+    background-image: url("../../public/assets/corvinal.png");
     width: 272px;
     height: 288px;
-    margin-left: 1179px;
-    /* margin-top: -288px; */
+    left: 954px;
+    bottom: 75px;
     border-radius: 0px;
-    background: green;
+    position: absolute;
 }
+
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {}

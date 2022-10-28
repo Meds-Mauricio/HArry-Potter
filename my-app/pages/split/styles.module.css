@@ -1,0 +1,58 @@
+.containerCasa {
+    background-image: url("../../public/assets/background_harry_azul_marinho_1.png");
+    /* //background-repeat:; */
+    width: 1345px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 8910px;
+}
+
+.headerPersonagens {
+    background-image: url("../../public/assets/topo.png");
+    display: flex;
+    width: 1345px;
+    height: 103px;
+    justify-content: center;
+}
+
+.imgTopo {
+    background-image: url("../../public/assets/logo_harry_potter_wizard3_1.png");
+    background-repeat: no-repeat;
+    width: 203px;
+    margin-top: 14px;
+}
+
+.imgFundo {
+    height: 730px;
+    width: 1345px;
+    border-radius: 0px;
+    margin-bottom: 1670px;
+    margin-left: 6px;
+}
+
+
+
+.cardContainer {
+    display: flex;
+    width: 1260px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.cardContainer img {
+    width: 200px;
+    height: 227px;
+    margin-left: 50px;
+}
+
+.personagemNome {
+    color:#A6955A;
+    width: 205px;
+    margin-left: 47px;
+    text-align: center;
+}

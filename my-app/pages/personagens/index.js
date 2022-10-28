@@ -7,9 +7,10 @@ import Modal from '../../Componentes/Modal';
 export default function Personagens() {
 
 
-    const [detalhes, setDetalhes] = useState(false);
+    const [house, setHouse] = useState(false);
     const [resposta, setResposta] = useState();
-    const [openModal, setOpenModal] = useState(false)
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [personagemAtual, setPersonagemAtual] = useState({});
 
     const persons = (personagem) => {
         setResposta(true);
@@ -20,7 +21,7 @@ export default function Personagens() {
             .then((response) => {
                 setResposta(response?.data.results);
                 console.log(response?.data.results, "abacaxi");
-                setOpenModal(true);
+                setOpenIsModal(true);
 
             })
 
@@ -38,43 +39,68 @@ export default function Personagens() {
             });
 
     }, []);
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+        const params = new URLSearchParams(window.location.search);
+        let urlParams = undefined;
+        params.forEach((value, key) => {
+          urlParams = Object.assign({}, urlParams, {
+            [key]: value.toString(),
+          });
+        });
+        console.log(urlParams, 'urlParams')
+        setHouse(urlParams)
+      }
+    }, []);
 
     const click = () => {
         window.location.href = "/"
     }
+    const handleOpenModal = (personagem) => {
+      setPersonagemAtual(personagem);
+      setModalIsOpen(true)
+    };
 
+    const casas = () => {
+      switch (house?.house) {
+        case 'gryffindor': return (
+          <>
+            <p>grifinória</p>
+          </>
+        );
+        case 'slytherin': return (
+          <>
+            <p>soncerina</p>
+          </>
+        );
+        case 'hufflepuff': return (
+          <>
+            <p>lufa-lufa</p>
+          </>
+        );
+        case 'ravenclaw': return (
+          <>
+            <p>corvinal</p>
+          </>
+        );
+        case 'personagens': return (
+          <>
+            <p>personagens</p>
+            {console.log('entrou')}
+          </>
+        );
+      }
+    }
     return (
         <section className={style.containerPersonagens}>
-            <div className={style.headerPersonagens}>
-                <section className={style.containerModal}>
-                    {openModal && resposta.ccharacters && (
-                        <Modal
-                            imagem={resposta.characters.image} alt="lista"
-                            nome={resposta.characters.name}
-                            casa={resposta.characters.house}
-                            Espécie={resposta.characters.species}
-                            Data de Nasc={resposta.characters.dateOfBirth}
-                            Gênero={resposta.characters.gender}
-                            Patrous={resposta.characters.patronus}
-                            Varinha={resposta.characters.wand}
-                            Madeira={resposta.characters.wand?.wood}
-                            Núcleo={resposta.characters.wand?.core}
-                            Comprimento={resposta.characters.wand?.length}
-                            Ancestralidade={resposta.characters.ancestry}
-                            Ator={resposta.actor}
-                            setOpenModal={setOpenModal}
-                        />
-                    )}
-                </section>
-                <div onClick={() =>
-                    click()} className={style.imgTopo}></div>
+            <div className={style.headerPersonagens}>                
+                <div onClick={click} className={style.imgTopo}></div>
             </div>
             <div className={style.imgFundo}>
-                <div className={style.containerLogosMain}></div>
                 <div className={style.containerMain}>
                 <div className={style.logoLinha}>
                         <div className={style.imgLogo1}></div>
-                        <p className={style.p1}>Navegue pelas Casas</p>
+                        <p className={style.p1}>{casas()}</p>
                         <div className={style.imgLinha}></div>
                     </div>
                 </div>
@@ -84,9 +110,9 @@ export default function Personagens() {
                         resposta.map((characters, index) => {
                             return (
                                 <div key={index}>
-                                    <div className={style.listPersonagens} onClick={(e) => setOpenModal()}>
+                                    <div onClick={() => handleOpenModal(characters)}>
 
-                                        <img alt="lista" src={characters.image} />
+                                        <img alt="lista" src={characters?.image} />
                                         <p className={style.personagemNome}>{characters.name}</p>
                                     </div>
                                 </div>
@@ -101,6 +127,10 @@ export default function Personagens() {
 
                 </div>
             </div>
+            {
+          modalIsOpen &&
+          <Modal handleClose={() => setModalIsOpen(false)} personagemAtual={personagemAtual} />
+        }
         </section >
 
     )

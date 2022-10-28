@@ -26,14 +26,11 @@
     background-repeat: no-repeat;
     width: 203px;
     margin-top: 14px;
+    cursor: pointer;
 }
 
 .imgFundo {
-    /* height: 730px; */
     width: 1345px;
-    /* border-radius: 0px;
-    margin-bottom: 8076px;
-    margin-left: 6px; */
 }
 
 
@@ -72,38 +69,45 @@
     background-image: url("../../public/assets/hogwarts_shield_1.png");
     background-repeat: no-repeat;
     width: 73px;
-    height: 84px;  
-
+    height: 84px;
+    margin-right: -7px;
 }
 
 .p1 {
     width: 270px;
+    width: 270px;
     margin-top: 37px;
-    margin-left: 10px;
+    margin-left: 11px;
     font-family: 'Arial';
     font-size: 24px;
     color: #A6955A;
+    text-align: center;
 }
 
 .logoLinha {
     display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 44px;
+    justify-content: flex-end;
+    margin-top: 104px;
     width: 1285px;
-    margin-left: 14px;
+    margin-left: -10px;
 }
 
 .imgLinha {
-    background-image: url(/_next/static/media/Linha-home.dcb323f5.png);
-    background-repeat: no-repeat;
+    background-image: url('../../public/assets/Linha-home.png');
     width: 802px;
-    margin-top: 49.5px;
-    margin-left: 0px;
+    height: 2px;
+    margin-top: 73.5px;
+    margin-right: 37px;
 }
 
 .containerModal {
-    background-color: red;
-    position: fixed;
+    display: flex;
+    width: 704px;
+    height: 453px;
+    background: #171717;
+    flex-direction: column;
+    border-radius: 10px;
 }

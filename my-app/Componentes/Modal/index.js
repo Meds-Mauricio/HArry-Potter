@@ -1,44 +1,39 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
-import Image from 'next/image'
-import React, { useState } from 'react'
 
-const open = true
+import React from 'react'
+import styles from "./styles.module.css"
 
-export default function Modal({ image, name, house, species, dateOfBirth, gender, patronus, wand, ancestry, actor, setOpenModal = { setOpenModal } }) {
+export default function Modal(props) {
     return (
-        <section>
-            <div>
+        <div className={styles.container}>
+            <div className={styles.content}>
+                <div className={styles.headercontent}>
+                    <div className={styles.fechar} onClick={props.handleClose}>X</div>
+                </div>
+                <div className={styles.main}>
 
-                {name && (
-                    <div className={style.modal}>
-                        <p>resposta:{name}</p>
-                        <p>resposta:{house}</p>
-                        <p>resposta:{species}</p>
-                        <p>resposta:{dateOfBirth}</p>
-                        <p>resposta:{gender}</p>
-                        <p>resposta:{patronus}</p>
-                        <p>resposta:{wand}</p>
-                        <p>resposta:{wand.wood}</p>
-                        <p>resposta:{wand.core}</p>
-                        <p>resposta:{wand.legend}</p>
-                        <p>resposta:{ancestry}</p>
-                        <p>resposta:{actor}</p>
-                        <div>
-                            <Image width={'256px'} height={'356px'} src={props.characters.image} />
+                    <div className={styles.img}>
+                        <div className={styles.styleImg}>
+                            <img width={'256px'} height={'356px'} src={props.personagemAtual?.image} />
                         </div>
                     </div>
-                )(
-
-
-                    <div>
-                        <button onClick={() => setOpenModal(openModal)}>X</button>
+                    <div className={styles.props}>
+                        <p className={styles.text}>Nome:<span className={styles.color}>{props.personagemAtual?.name}</span></p>
+                        <p className={styles.text}>Casa:<span className={styles.color}>{props.personagemAtual?.house}</span></p>
+                        <p className={styles.text}>Espécie:<span className={styles.color}>{props.personagemAtual?.species}</span></p>
+                        <p className={styles.text}>Data de Nasc:<span className={styles.color}>{props.personagemAtual?.dateOfBirth}</span></p>
+                        <p className={styles.text}>Gênero:<span className={styles.color}>{props.personagemAtual?.gender}</span></p>
+                        <p className={styles.text}>Patronus:<span className={styles.color}>{props.personagemAtual?.patronus}</span></p>
+                        <p className={styles.text}>varinha:<span className={styles.color}></span></p>
+                        <div className={styles.Alinhar}>
+                            <p className={styles.text}>- Madeira<span className={styles.color}>{props.personagemAtual?.wand?.wood}</span></p>
+                            <p className={styles.text}>- Núcleo<span className={styles.color}>{props.personagemAtual?.wand?.core}</span></p>
+                            <p className={styles.text}>- Comprimnto<span className={styles.color}>{props.personagemAtual?.wand?.length}</span></p>
+                        </div>
+                        <p className={styles.text}>Ancestralidade:<span className={styles.color}>{props.personagemAtual?.ancestry}</span></p>
+                        <p className={styles.text}>Ator:<span className={styles.color}>{props.personagemAtual?.actor}</span></p>
                     </div>
-                )}
+                </div>
             </div>
-
-
-        </section >
+        </div>
     )
 }

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '../Componentes/Header'
 import style from '../styles/Home.module.css'
+import Footer from '../Componentes/Footer';
 
-export default function Home() {
+export default function Home(props) {
 
     return (
         <section className={style.ContainerHome}>
@@ -24,7 +25,7 @@ export default function Home() {
                         <div className={style.imgLogo} />
                     </div>
                     <div className={style.button}>
-                        <button onClick={() => (window.location.href = "/personagens")} className={style.retangulo}>
+                        <button onClick={() => (window.location.href='/personagens?house=personagens')} className={style.retangulo}>
                             <p>Veja Todos <br />Os Personagens</p>
                         </button>
                     </div>
@@ -36,10 +37,10 @@ export default function Home() {
                 </div>
             </section>
             <section className={style.footerContainer}>
-                <div className={style.imgGrifinoria} onClick={() => (window.location.href = "/casa")}></div>
-                <div className={style.imgSonserina} onClick={() => (window.location.href = "/casa")}></div>
-                <div className={style.imgLufaLufa} onClick={() => (window.location.href = "/casa")}></div>
-                <div className={style.imgCorvinal} onClick={() => (window.location.href = "/casa")}></div>
+      <div className={style.imgGrifinoria} onClick={() => (window.location.href='/personagens?house=gryffindor')} ></div>
+      <div className={style.imgSonserina} onClick={() => (window.location.href='/personagens?house=slytherin')} ></div>
+      <div className={style.imgLufaLufa} onClick={() => (window.location.href='/personagens?house=hufflepuff')}></div>
+      <div className={style.imgCorvinal} onClick={() => (window.location.href='/personagens?house=ravenclaw')}></div>
             </section>
         </section>
     )
