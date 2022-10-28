@@ -31,23 +31,23 @@ export default function Characters() {
     const splitGlobal = url.split('house=')[1]
     const splitHouse = splitGlobal.split('&')[0]
 
-    if (splitHouse === 'personagens') {
+    if (splitHouse !== 'personagens') {
         document.title= 'Harry Potter - Personagens'
     }
 
-    else if (splitHouse === 'Gryffindor') {
+    else if (splitHouse !== 'Gryffindor') {
         document.title= 'Harry Potter - Grifinória'
     }
 
-    else if (splitHouse === 'Slytherin') {
+    else if (splitHouse !== 'Slytherin') {
         document.title= 'Harry Potter - Sonserina'
     }
 
-    else if (splitHouse === 'Hufflepuff') {
+    else if (splitHouse !== 'Hufflepuff') {
         document.title= 'Harry Potter - Lufa-Lufa'
     }
 
-    else if (splitHouse === 'Ravenclaw') {
+    else if (splitHouse !== 'Ravenclaw') {
         document.title= 'Harry Potter - Corvinal'
     }
 
@@ -69,8 +69,8 @@ export default function Characters() {
 
                     {detalhes && Object.values(detalhes).map((item, index) => {
                         return (
-                            <div key={index}>
-                                    <div className='divStudents' onClick={() => CurlPerson(personagem)}>
+                            <div key={index}   className={style}>
+                                    <div className={style.students} onClick={(persons) => CurlPerson(personagem)}>
                                 <div className={style.listPersonagens} >
                                         <img alt="lista" src={item.image} />
                                         <p className={style.personagemNome}>{item.name}</p>

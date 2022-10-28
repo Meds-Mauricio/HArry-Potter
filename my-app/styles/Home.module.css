@@ -1,17 +1,22 @@
 .containerHome {
   background-size: cover;
   width: 1350px;
-
   display: flex;
   justify-content: center;
 }
-
-@media (max-width > 360px) {
+@media screen and (max-width: 360px) {
   .containerHome {
-    width: 100%;
-    flex-direction: column;
+    height: 29px;
+    background: #a6955a;
   }
 }
+
+.headerHome{
+    height: 29px;
+    background: #a6955a;
+}
+
+
 
 .mainHome {
   background-image: url('../public/assets/logo-Home_1.png');
@@ -23,12 +28,25 @@
   margin-top: 18px;
 }
 
+
 .logos {
   display: flex;
   flex-direction: column;
   width: 444px;
   margin-top: -18px;
 }
+
+@media screen and (max-width : 360px) {
+  .logos {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
 
 .logoHarry {
   background-image: url('../public/assets/Logo.png');
@@ -39,10 +57,13 @@
   margin-left: 94px;
 }
 
+
 .button {
   margin-top: -446px;
   margin-left: 34px;
 }
+
+
 
 .retangulo {
   background-image: url('../public/assets/Retangulo-home.png');
@@ -55,6 +76,8 @@
   margin-left: 108px;
   cursor: pointer;
 }
+
+
 
 .retangulo p {
   width: 172px;
@@ -69,6 +92,12 @@
   left: -201px;
   top: 61px;
   border-radius: nullpx;
+}
+
+@media screen and (max-width : 360px) {
+  .retangulo p  {
+    width: ;
+  }
 }
 
 .imgLogo1 {
@@ -87,6 +116,8 @@
   color: #a6955a;
 }
 
+
+
 .logoLinha {
   display: flex;
   flex-direction: row;
@@ -96,12 +127,27 @@
   width: 1285px;
 }
 
+@media screen and (max-width : 360px) {
+  .logoLinha {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .imgLinha {
   background-image: url('../public/assets/Linha-home.png');
   background-repeat: no-repeat;
   width: 802px;
   margin-top: 49.5px;
   margin-left: 25px;
+}
+
+@media screen and (max-width : 360px) {
+  .imgLinha {
+    width: ;
+  }
 }
 
 .footerContainer {
@@ -114,11 +160,27 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width : 360px) {
+  .footerContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+}
+
 .imgGrifinoria {
   background-image: url('../public/assets/grifinoria.png');
   width: 272px;
   height: 288px;
   cursor: pointer;
+}
+
+@media screen and (max-width : 360px) {
+  .imgGrifinoria {
+  }
 }
 
 .imgSonserina {
@@ -128,11 +190,21 @@
   cursor: pointer;
 }
 
+@media screen and (max-width : 360px) {
+  .imgSonserina {
+  }
+}
+
 .imgLufaLufa {
   background-image: url('../public/assets/lufa-lufa.png');
   width: 272px;
   height: 288px;
   cursor: pointer;
+}
+
+@media screen and (max-width : 360px) {
+  .imgLufaLufa {
+  }
 }
 
 .imgCorvinal {
@@ -142,12 +214,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media screen and (max-width : 360px) {
+  .imgCorvinal {
   }
-}
-
-@media (prefers-color-scheme: dark) {
 }

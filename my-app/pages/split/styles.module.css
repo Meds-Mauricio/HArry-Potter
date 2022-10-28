@@ -31,8 +31,42 @@
     margin-bottom: 1670px;
     margin-left: 6px;
 }
+.imgLogo1 {
+    background-image: url("../../public/assets/hogwarts_shield_1.png");
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 84px;
+    margin-right: -7px;
+    margin-top: 28px;
+}
 
+.p1 {
+    width: 270px;
+    margin-top: 37px;
+    margin-left: 11px;
+    font-family: 'Arial';
+    font-size: 24px;
+    color: #A6955A;
+    text-align: center;
+}
 
+.logoLinha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: -28px;
+    width: 1285px;
+    margin-left: -10px;
+}
+
+.imgLinha {
+    background-image: url('../../public/assets/Linha-home.png');
+    width: 802px;
+    height: 2px;
+    margin-top: 73.5px;
+    margin-right: 37px;
+}
 
 .cardContainer {
     display: flex;
@@ -55,4 +89,26 @@
     width: 205px;
     margin-left: 47px;
     text-align: center;
+}
+
+.studentst{
+background-color: red;
+width: 200px;
+height: 250px;
+}
+
+.alunos{
+background-color: blue;
+width: 200px;
+height: 250px;
+}
+
+.listPersonagens{
+background-color: green;
+width: 200px;
+height: 250px;
+
+
+
+
 }

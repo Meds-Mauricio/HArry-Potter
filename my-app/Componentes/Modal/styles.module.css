@@ -28,7 +28,6 @@ flex-direction: row;
 .main{
 display: flex;
 justify-content: center;
-align-items: center;
 }
 
 .img{
@@ -41,7 +40,7 @@ font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-line-height: 30px;
+line-height: 11px;
 
 }
 

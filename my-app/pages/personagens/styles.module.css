@@ -31,6 +31,7 @@
 
 .imgFundo {
     width: 1345px;
+    margin-bottom: 1750px;
 }
 
 
@@ -41,7 +42,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 72px;
-    margin-top: 25px;
+    margin-top: 31px;
     align-content: center;
 }
 
@@ -71,10 +72,11 @@
     width: 73px;
     height: 84px;
     margin-right: -7px;
+    margin-top: 28px;
+    
 }
 
 .p1 {
-    width: 270px;
     width: 270px;
     margin-top: 37px;
     margin-left: 11px;
@@ -86,11 +88,9 @@
 
 .logoLinha {
     display: flex;
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    margin-top: 104px;
     width: 1285px;
     margin-left: -10px;
 }
@@ -111,3 +111,12 @@
     flex-direction: column;
     border-radius: 10px;
 }
+
+.chave{
+    cursor: pointer;
+    background-color: #000;
+    height: 305px;
+    width: 203px;
+    
+}
+

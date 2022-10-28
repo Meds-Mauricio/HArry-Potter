@@ -34,7 +34,6 @@ export default function Personagens() {
             )
             .then((response) => {
                 setResposta(response.data);
-                console.log(response.data, "pera");
 
             });
 
@@ -48,7 +47,6 @@ export default function Personagens() {
             [key]: value.toString(),
           });
         });
-        console.log(urlParams, 'urlParams')
         setHouse(urlParams)
       }
     }, []);
@@ -86,7 +84,6 @@ export default function Personagens() {
         case 'personagens': return (
           <>
             <p>personagens</p>
-            {console.log('entrou')}
           </>
         );
       }
@@ -109,8 +106,9 @@ export default function Personagens() {
                     {resposta &&
                         resposta.map((characters, index) => {
                             return (
-                                <div key={index}>
-                                    <div onClick={() => handleOpenModal(characters)}>
+                                <div key={index}className={style.chave}>
+                                
+                                    <div className={style.onclick} onClick={() => handleOpenModal(characters)}>
 
                                         <img alt="lista" src={characters?.image} />
                                         <p className={style.personagemNome}>{characters.name}</p>
