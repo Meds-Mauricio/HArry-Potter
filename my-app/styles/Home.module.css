@@ -92,11 +92,7 @@
   border-radius: nullpx;
 }
 
-@media screen and (max-width : 360px) {
-  .retangulo p  {
-    width: ;
-  }
-}
+
 
 .imgLogo1 {
   background-image: url('../public/assets/hogwarts_shield_1.png');
@@ -142,11 +138,6 @@
   margin-left: 25px;
 }
 
-@media screen and (max-width : 360px) {
-  .imgLinha {
-    width: ;
-  }
-}
 
 .footerContainer {
   display: flex;
@@ -176,10 +167,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width : 360px) {
-  .imgGrifinoria {
-  }
-}
+
 
 .imgSonserina {
   background-image: url('../public/assets/sonserina.png');
@@ -188,10 +176,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width : 360px) {
-  .imgSonserina {
-  }
-}
+
 
 .imgLufaLufa {
   background-image: url('../public/assets/lufa-lufa.png');
@@ -200,10 +185,6 @@
   cursor: pointer;
 }
 
-@media screen and (max-width : 360px) {
-  .imgLufaLufa {
-  }
-}
 
 .imgCorvinal {
   background-image: url('../public/assets/corvinal.png');
@@ -212,7 +193,4 @@
   cursor: pointer;
 }
 
-@media screen and (max-width : 360px) {
-  .imgCorvinal {
-  }
-}
+
