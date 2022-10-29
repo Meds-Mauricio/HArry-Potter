@@ -1,114 +1,166 @@
 .containerCasa {
-    background-image: url("../../public/assets/background_harry_azul_marinho_1.png");
-    /* //background-repeat:; */
-    width: 1345px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 8910px;
+  background-image: url('../../public/assets/background_harry_azul_marinho_1.png');
+  width: 1345px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 8910px;
+}
+
+@media screen and (max-width: 360px) {
+  .containerCasa {
+    width: 50%;
+    
+  }
 }
 
 .headerPersonagens {
-    background-image: url("../../public/assets/topo.png");
-    display: flex;
-    width: 1345px;
-    height: 103px;
-    justify-content: center;
+  background-image: url('../../public/assets/topo.png');
+  display: flex;
+  width: 1345px;
+  height: 103px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 360px) {
+  .headerPersonagens {
+  }
 }
 
 .imgTopo {
-    background-image: url("../../public/assets/logo_harry_potter_wizard3_1.png");
-    background-repeat: no-repeat;
-    width: 203px;
-    margin-top: 14px;
+  background-image: url('../../public/assets/logo_harry_potter_wizard3_1.png');
+  background-repeat: no-repeat;
+  width: 203px;
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 360px) {
+  .imgTopo {
+  }
 }
 
 .imgFundo {
-    height: 730px;
-    width: 1345px;
-    border-radius: 0px;
-    margin-bottom: 1670px;
-    margin-left: 6px;
+  height: 730px;
+  width: 1345px;
+  border-radius: 0px;
+  margin-bottom: 1670px;
+  margin-left: 6px;
 }
+
 .imgLogo1 {
-    background-image: url("../../public/assets/hogwarts_shield_1.png");
-    background-repeat: no-repeat;
-    width: 73px;
-    height: 84px;
-    margin-right: -7px;
-    margin-top: 28px;
+  background-image: url('../../public/assets/hogwarts_shield_1.png');
+  background-repeat: no-repeat;
+  width: 73px;
+  height: 84px;
+  margin-right: -7px;
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 360px) {
+  .imgLogo1 {
+  }
 }
 
 .p1 {
-    width: 270px;
-    margin-top: 37px;
-    margin-left: 11px;
-    font-family: 'Arial';
-    font-size: 24px;
-    color: #A6955A;
-    text-align: center;
+  width: 270px;
+  margin-top: 37px;
+  margin-left: 11px;
+  font-family: 'Arial';
+  font-size: 24px;
+  color: #a6955a;
+  text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+  .p1 {
+    margin-left: -70px;
+    font-size: 121px;
+    font-weight: bolder;
+  }
 }
 
 .logoLinha {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    margin-top: -28px;
-    width: 1285px;
-    margin-left: -10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-top: -28px;
+  width: 1285px;
+  margin-left: -10px;
 }
 
+@media screen and (max-width: 360px) {
+    .cardContainer {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+  }
+
 .imgLinha {
-    background-image: url('../../public/assets/Linha-home.png');
-    width: 802px;
-    height: 2px;
-    margin-top: 73.5px;
-    margin-right: 37px;
+  background-image: url('../../public/assets/Linha-home.png');
+  width: 802px;
+  height: 2px;
+  margin-top: 73.5px;
+  margin-right: 37px;
+}
+
+@media screen and (max-width: 360px) {
+  .imgLinha {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 88px;
+  }
 }
 
 .cardContainer {
+  display: flex;
+  width: 1260px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 360px) {
+  .cardContainer {
     display: flex;
-    width: 1260px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-top: 25px;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 159px; 
+  }
 }
 
 .cardContainer img {
-    width: 200px;
-    height: 227px;
-    margin-left: 50px;
+  width: 200px;
+  height: 227px;
+  margin-left: 50px;
 }
 
 .personagemNome {
-    color:#A6955A;
-    width: 205px;
-    margin-left: 47px;
-    text-align: center;
+  color: #a6955a;
+  width: 205px;
+  margin-left: 47px;
+  text-align: center;
 }
 
-.studentst{
-background-color: red;
-width: 200px;
-height: 250px;
+.studentst {
+  background-color: red;
+  width: 200px;
+  height: 250px;
 }
 
-.alunos{
-background-color: blue;
-width: 200px;
-height: 250px;
+.alunos {
+  background-color: blue;
+  width: 200px;
+  height: 250px;
 }
 
-.listPersonagens{
-background-color: green;
-width: 200px;
-height: 250px;
-
-
-
-
+.listPersonagens {
+  background-color: green;
+  width: 200px;
+  height: 250px;
 }

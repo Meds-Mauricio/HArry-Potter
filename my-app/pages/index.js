@@ -24,7 +24,7 @@ export default function Home (props) {
             <div className={style.imgLogo} />
           </div>
           <div className={style.button}>
-            <button
+            <div
               onClick={() =>
                 (window.location.href = '/personagens?house=personagens')
               }
@@ -34,7 +34,7 @@ export default function Home (props) {
                 Veja Todos <br />
                 Os Personagens
               </p>
-            </button>
+            </div>
           </div>
         </div>
         <div className={style.logoLinha}>

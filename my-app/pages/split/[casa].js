@@ -67,7 +67,7 @@ export default function Characters() {
                 </div>
                 <div className={style.cardContainer}>
 
-                    {detalhes && Object.values(detalhes).map((item, index) => {
+                    {detalhes && Object.values(modalIsOpen).map((item, index) => {
                         return (
                             <div key={index}   className={style}>
                                     <div className={style.students} onClick={(persons) => CurlPerson(personagem)}>

@@ -5,21 +5,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background: #041B29;
     width: 1345px ; 
-    height: auto;
 
 }
 
-.body {
-    width: 135px;
-    background: #041B29;
+html, body {
+    width: 1345px;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
+@media screen and (max-width: 360px) {
+  .body {
+    width: 400px;
   }
 }
