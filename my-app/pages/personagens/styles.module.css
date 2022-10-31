@@ -56,12 +56,13 @@
 .cardContainer img {
   width: 200px;
   height: 268px;
-  margin: 0;
+  margin: 2px 1px;
 }
 
 .personagemNome {
   color: #a6955a;
-  width: 205px;
+  width: 203px;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -82,6 +83,14 @@
   margin-top: 28px;
 }
 
+@media screen and (max-width: 360px) {
+  .imgLogo1 {
+    width: 9%;
+    height: 84px;
+    margin-top: 30px;
+  }
+}
+
 .p1 {
   width: 270px;
   margin-top: 37px;
@@ -90,6 +99,19 @@
   font-size: 24px;
   color: #a6955a;
   text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 360px) {
+  .p1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: -63px;
+    margin-left: -18px;
+  }
 }
 
 .logoLinha {
@@ -103,14 +125,13 @@
 
 @media screen and (max-width: 360px) {
   .logoLinha {
-    margin-top: 157px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-}
+    margin-left: 30px;
+    margin-top: 127px;
   }
-
+}
 
 .imgLinha {
   background-image: url('../../public/assets/Linha-home.png');
@@ -121,13 +142,13 @@
 }
 
 @media screen and (max-width: 360px) {
-    .imgLinha {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin-left: 88px;
-    }
+  .imgLinha {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 88px;
   }
+}
 
 .containerModal {
   display: flex;
@@ -141,6 +162,7 @@
 .chave {
   cursor: pointer;
   background-color: #000;
-  height: 305px;
+  height: 302px;
   width: 203px;
+  margin-top: 13px;
 }

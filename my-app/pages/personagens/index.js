@@ -110,7 +110,7 @@ export default function Personagens() {
                                 
                                     <div className={style.onclick} onClick={() => handleOpenModal(characters)}>
 
-                                        <img alt="lista" src={characters?.image} />
+                                        <img className={style.imgPersonagens} alt="lista" src={characters?.image} />
                                         <p className={style.personagemNome}>{characters.name}</p>
                                     </div>
                                 </div>

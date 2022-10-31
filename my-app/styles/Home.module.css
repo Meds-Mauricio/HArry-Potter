@@ -75,16 +75,15 @@
 
 .button {
   margin-top: -446px;
-  margin-left: 34px;
+  margin-left: 36px;
 }
 
 @media screen and (max-width: 360px) {
   .button {
-    width: 50%;
     display: flex;
     align-items: center;
-    margin-top: 35px;
-    margin-right: 115px;
+    margin-top: 140px;
+    margin-right: 149px;
     z-index: 100;
   }
 }
@@ -155,21 +154,25 @@
 }
 
 .p1 {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
   color: #a6955a;
+  font-size: 19px;
+  width: 27%;
+  height: 46px;
+  margin-top: 38px;
 }
 
 @media screen and (max-width: 360px) {
   .p1 {
     width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 64px;
+    margin-top: 75px;
+    margin-bottom: -63px;
   }
 }
 
@@ -180,6 +183,7 @@
   justify-content: flex-end;
   margin-top: 104px;
   width: 1285px;
+  margin-left: 9px;
 }
 
 @media screen and (max-width: 360px) {
@@ -187,7 +191,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -466px;
+    margin-top: -396px;
     margin-left: 30px;
   }
 }
@@ -202,10 +206,12 @@
 
 @media screen and (max-width: 360px) {
   .imgLinha {
-    width: 272px;
-    height: 288px;
-    cursor: pointer;
-    margin: 85px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 77px;
+    margin-top: 90px;
+    height: 2px;
   }
 }
 
@@ -227,7 +233,7 @@
     height: auto;
     flex-direction: column;
     align-items: center;
-    margin-top: 290px;
+    margin-top: 320px;
   }
 }
 
